@@ -43,22 +43,11 @@ body {
 
 #player {
     position: relative;
-    border: 0.5rem solid white;
-    border-radius: 50%;
 }
 
 .play {
     position: absolute;
     top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.replay {
-    height: 3rem;
-    width: 3rem;
-    position: absolute;
-    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
