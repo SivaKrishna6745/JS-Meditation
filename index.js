@@ -41,3 +41,20 @@ bgAudio.addEventListener("timeupdate", () => {
         play.setAttribute("src", "images/play.png");
     }
 });
+
+let rain = document.querySelector(".rain");
+let ocean = document.querySelector(".ocean");
+
+rain.addEventListener("click", () => {
+    bgAudio.setAttribute("src","sounds/rain.mp3");
+    bgAudio.play();
+    bgVideo.setAttribute("src", "videos/rain.mp4");
+    bgVideo.play();
+});
+
+ocean.addEventListener("click", () => {
+    bgAudio.setAttribute("src","sounds/beach.mp3");
+    bgAudio.play();
+    bgVideo.setAttribute("src", "videos/beach.mp4");
+    bgVideo.play();
+});
