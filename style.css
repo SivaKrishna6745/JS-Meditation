@@ -43,25 +43,29 @@ body {
 
 #player {
     position: relative;
+    border: 0.5rem solid white;
+    border-radius: 50%;
 }
 
-#player svg {
+.play {
     position: absolute;
-    height: 70%;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    pointer-events: none;
 }
 
 .replay {
     height: 3rem;
     width: 3rem;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .time {
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
 }
 
 /* #theme {
