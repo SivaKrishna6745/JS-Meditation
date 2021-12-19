@@ -1,0 +1,75 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.vid-container {
+    position: fixed;
+    z-index: -1;
+}
+
+#timer, #player, #theme {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+}
+
+/* #timer {
+    
+} */
+
+.btn {
+    height: 2.8rem;
+    aspect-ratio: 3.0 / 1;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+}
+
+#player {
+    position: relative;
+}
+
+#player svg {
+    position: absolute;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.replay {
+    height: 3rem;
+    width: 3rem;
+}
+
+.time {
+    position: absolute;
+    bottom: 0;
+}
+
+/* #theme {
+    
+} */
+
+.rain, .ocean {
+    padding: 1rem;
+    border: 0.2rem solid black;
+    border-radius: 50%;
+}
